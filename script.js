@@ -1,10 +1,10 @@
+// Om du inte ser hela den här raden, behöver du slå på WORD WRAP. Välj menyn: View -> Word Wrap. Eller leta upp Word Wrap i inställningarna: File -> Settings -> Preferences -> sök på "wrap".
 /*
-Variabler
-Parametrar
-Funktion
-if statements (if sats)
-
-expression (uttryck)
+Dessa är våra byggstenar - problemlösning med bottom-up metoden:
+	Variabler
+	Parametrar
+	Funktion
+	if statements (if sats)
 */
 /*
 Datatyper i JavaScript:
@@ -13,8 +13,7 @@ Datatyper i JavaScript:
 + string -> "hello", 'hello'
 + null, undefined, object, Symbol, BigInt
 
-1 + 2
-Operator: används för att kombinera värden
+Operator: används för att kombinera värden. Exempel: +, -, /, *, %
 
 camelCase  (JavaScript variabler, funktionsnamn m.m.)
 PascalCase  (komponenter, klasser m.m.)
@@ -22,7 +21,7 @@ kebab-case  (CSS)
 snake_case
 */
 
-// skriv en funktion som returnerar en rektangels area
+// Övning 1: skriv en funktion som returnerar en rektangels area
 function rectangleArea(width, height) {
 	let area = width * height
 	return area
@@ -31,7 +30,10 @@ function rectangleArea(width, height) {
 let area = rectangleArea(100, 200)
 console.log(`Arean för rektangeln är: ` + area)
 
+// --------------------------------------------------- //
 
+
+// Övning 2: kontrollera om en sträng är tom
 // function checkIfStringEmpty  <- första försöket till namn
 function stringIsEmpty(string) {
 	// Extra övning: kontrollera OM string är en sträng eller en annan datatyp
