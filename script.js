@@ -61,3 +61,33 @@ console.log(`Är sträng 2 tom? ` + isEmpty2)
 
 // Falsy: 0, '', null, undefined
 
+
+// --------------------------------------------------- //
+
+// Övning 3: skriv en funktion som kontrollerar om ett nummer är positivt eller negativt
+// Vi gör två varianter: 1) skriva ut svaret, 2) returnera svaret som en boolean
+// alternativt namn: checkIfPositiveOrNegative
+function checkIfNumberIsPositive(number) {
+	if( number > 0 ) {
+		console.log(`Talet ${number} är positivt!`)
+	}
+	else if( number < 0 ) {
+		console.log(`Talet ${number} är negativt!`)
+	}
+	else {
+		console.log('Talet 0 är varken positivt eller negativt.')
+	}
+}
+
+checkIfNumberIsPositive(500)
+checkIfNumberIsPositive(-2)
+checkIfNumberIsPositive(0)
+
+// Returnerar true om parametern är ett positivt tal. Se upp med nollan!
+function numberIsPositive(number) {
+	if (number > 0) {
+		return true
+	} else {
+		return false
+	}
+}
