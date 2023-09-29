@@ -98,7 +98,9 @@ function numberIsPositive(number) {
 // - basfall  (enklast möjliga)
 // - rekursionsfall
 function factorial(n) {
-	if( n === 2 ) {
+	if( n <= 1 ) {
+		return 1
+	} else if( n === 2 ) {
 		return 2
 	} else {
 		return n * factorial(n - 1)
