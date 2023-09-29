@@ -91,3 +91,20 @@ function numberIsPositive(number) {
 		return false
 	}
 }
+
+// --------------------------------------------------- //
+// Övning 4: Skriv en funktion som räknar ut fakulteten (eng. factorial) av ett tal
+// Rekursion: en funktion som anropar sig själv
+// - basfall  (enklast möjliga)
+// - rekursionsfall
+function factorial(n) {
+	if( n === 2 ) {
+		return 2
+	} else {
+		return n * factorial(n - 1)
+	}
+}
+
+console.log('2! == ', factorial(2))
+console.log('3! == ', factorial(3))
+console.log('4! == ', factorial(4))
