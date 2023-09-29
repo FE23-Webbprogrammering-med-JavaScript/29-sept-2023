@@ -110,3 +110,14 @@ function factorial(n) {
 console.log('2! == ', factorial(2))
 console.log('3! == ', factorial(3))
 console.log('4! == ', factorial(4))
+
+
+// EXCLUSIVE PREVIEW
+// Exempel på hur JavaScript används på webbsida
+const button = document.querySelector('#hello-button')
+button.addEventListener('click', whenClick)
+
+function whenClick() {
+	console.log('Användaren klickade på knappen')
+	button.classList.toggle('fancy')
+}
