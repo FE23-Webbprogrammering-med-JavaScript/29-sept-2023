@@ -121,3 +121,34 @@ function whenClick() {
 	console.log('Användaren klickade på knappen')
 	button.classList.toggle('fancy')
 }
+
+
+// --------------------------------------------------- //
+// Övning 11: returnera det mellersta tecknet i ett ord
+function getMiddleCharacter(word) {
+	// Ta reda på strängens längd
+	// är ordets längd udda eller jämnt?
+	// Räkna ut "mitten"
+	// plocka ut 1 eller 2 tecken (beroende på udda/jämnt)
+	// returnera tecknet/tecknen
+
+	const length = word.length
+	if( length % 2 === 0 ) {
+		// Jämnt antal tecken
+		// Exempel på en jämn sträng: 'anka'. Använd exempel för att göra sådan här kod lite mera konkret!
+		let x = length / 2 - 1
+		let chars = word[x] + word[x + 1]
+		return chars
+
+	} else {
+		// Udda antal tecken
+		// Exempel på udda sträng: 'badboll'
+		let x = Math.floor(length / 2)
+		let char = word[x]
+		return char
+	}
+}
+
+console.log('Mitten på anka är: ' + getMiddleCharacter('anka'))  // längd 4
+console.log('Mitten på kaleanka är: ' + getMiddleCharacter('kaleanka'))  // längd 8
+console.log('Mitten på badboll är: ' + getMiddleCharacter('badboll')) // längd 7
